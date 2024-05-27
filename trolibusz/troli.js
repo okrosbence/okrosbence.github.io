@@ -4,6 +4,7 @@ vegallomasNevek["70"] = "Kossuth Lajos tér - Erzsébet királyné útja, alulj�
 vegallomasNevek["72"] = "Orczy tér - Zugló vasútállomás (Hermina út)";
 vegallomasNevek["73"] = "Arany János utca - Keleti pályaudvar";
 vegallomasNevek["74"] = "Károly körút (Astoria) - Csáktornya park";
+vegallomasNevek["74"] = "Csáktornya park - Mexikói út";
 vegallomasNevek["75"] = "Jászai Mari tér - Puskás Ferenc Stadion";
 vegallomasNevek["76"] = "Jászai Mari tér - Keleti pályaudvar";
 vegallomasNevek["77"] = "Puskás Ferenc Stadion - Kála utca";
@@ -11,8 +12,9 @@ vegallomasNevek["78"] = "Kossuth Lajos tér - Keleti pályaudvar (Garay utca)";
 vegallomasNevek["79"] = "Keleti pályaudvar - Kárpát utca";
 vegallomasNevek["80"] = "Keleti pályaudvar - Örs vezér tere";
 vegallomasNevek["81"] = "Örs vezér tere - Fischer István utca";
+vegallomasNevek["82"] = "Mexikói út-Uzsoki Utcai Kórház - Örs vezér tere";
 vegallomasNevek["82"] = "Uzsoki Utcai Kórház - Örs vezér tere";
-
+vegallomasNevek["83"] = "Orczy Tér - Fővám tér";
 function jaratKiiras(elem, index){
 	var ujElem = document.createElement("option");
     var ujSzoveg = document.createTextNode(index); 
@@ -21,7 +23,7 @@ function jaratKiiras(elem, index){
 }
 
 function vegallomasKiiras(jarat){
-    document.getElementById("valasz").innerHTML=vegallomasNevek[jarat];
+    document.getElementById("vegallomasok").innerHTML=vegallomasNevek[jarat];
 }
 
 function fel() {
